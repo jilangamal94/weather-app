@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <!-- ربط ملف الـ CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   
+  <!-- الحاوية الرئيسية للتطبيق -->
+  <div class="app">
+    <div class="lang-switch">
+      <button id="langBtn">Language</button>
+     <div id="langMenu" class="lang-menu hidden">
+         <button id="enBtn">English</button>
+         <button id="arBtn">العربية</button>
+     </div>
+    </div>
+    <h1 id="title">Weather</h1>
+
+    <!-- مكان البحث: الـ input والزرار -->
+    <div class="search">
+      <input type="text" id="cityInput" dir="auto" placeholder="Enter City name">
+      <button id="searchBtn">search</button>
+    </div>
+
+    <!-- رسالة للمستخدم (ترحيب أو خطأ) -->
+    <p id="message">Search for a city to see its weather</p>
+
+    <!-- كارت النتيجة: مخفي في البداية وهنظهره بالجافا سكريبت -->
+    <div id="weatherCard" class="card hidden">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <p id="date"></p>
+    </div>
+
+  </div>
+
+  <!-- ربط ملف الجافا سكريبت (انتِ اللي هتكتبيه) -->
+  <script src="main.js"></script>
+</body>
+</html>

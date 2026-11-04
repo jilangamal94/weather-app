@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("sky.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #16324a;
+  font-family: Arial, sans-serif;
+};
+.app {
+  width: 100%;
+  max-width: 380px;
+  padding: 24px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a7fc1;
+  color: white;
+  cursor: pointer;
+}
+#message {
+  margin-top: 20px;
+  color: #5d7387;
+}
+.card {
+  margin-top: 24px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+}
+#temperature {
+  font-size: 56px;
+  font-weight: bold;
+  color: #2a7fc1;
+}
+.lang-switch{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.lang-switch button {
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color:#2a7fc1 ;
+  color: #16324a;
+}
+.lang-menu{
+  margin-top: 8px;
+}
+
+.lang-menu button {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+.hidden {
+  display: none;
+} 
+#enBtn , #arBtn{
+  background-color: #90CAF9;
+  color: black;
+  width:66px;
+}
