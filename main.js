@@ -1,3 +1,4 @@
+import '.env/config()';
 let currentLang = "arBtn";
 let languageBtn = document.getElementById("langBtn");
 let serBtn = document.getElementById("searchBtn");
@@ -12,7 +13,7 @@ let enBtn = document.getElementById("enBtn");
 let arBtn = document.getElementById("arBtn");
 let title = document.getElementById("title");
 let date = document.getElementById("date");
-let apiKey ="6c5d703581c838f8b6a90187321c2528";
+process.env.apiKey;
 let texts = {
     enBtn: {title:"Weather", placeholder:"Enter City name",search:"search", message:"Search for a city to see its weather" },
     arBtn: {title:"الطقس", placeholder:"اكتب اسم المدينة",search:"بحث", message:"ابحث عن مدينة لمعرفة حالة الطقس"}
